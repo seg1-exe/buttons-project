@@ -1,0 +1,346 @@
+#app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background-color: #18181B;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 16px;
+}
+
+button{
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 56px;
+}
+
+/* CTA 1 */
+#cta_1{
+  background-color: #160F65;
+}
+#cta_1>button{
+  background-color: #1C0FB4;
+  color: white;
+  border-radius: 56px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#cta_1>button:hover{
+  background-color: #1400FF;
+  box-shadow: 0px 10px 86px 0px #1400FF;
+}
+
+#cta_1>button:hover p{
+  transform: translateY(-2px);
+}
+
+/* CTA 2 */
+#cta_2{
+  background-color: #FFFFFF;
+}
+#cta_2>button{
+  background-color: #F6F8FF;
+  color: black;
+  border-radius: 16px;
+  font-family: Inter, sans-serif ;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cta_2_arrow{
+  position:relative;
+  margin-left: 5px;
+  height: 30px;
+  width: 75px;
+  cursor:pointer;
+  transition:0.5s;
+  overflow:hidden;
+  transform: rotatez(180deg);
+}
+
+#cta_2_arrow:after{
+  position:absolute;
+  display:block;
+  content:"";
+  color:black;
+  width: 16px;
+  height: 15px;
+  top:-1px;
+  border-bottom:solid 2px;
+  transform:translatex(4px);
+}
+
+#cta_2_arrow:before{
+  position:absolute;
+  display:block;
+  content:"";
+  color:black;
+  width: 8px;
+  height: 8px;
+  border-top:solid 2px;
+  border-left:solid 2px;
+  top:50%;
+  left:2px;
+  transform-origin:0% 0%;
+  transform:rotatez(-45deg);
+}
+
+#cta_2:hover #cta_2_arrow:after{
+  width: 74px;
+  transition-duration: 0.2s;
+}
+
+#cta_2>button:hover{
+  background-color: #E1E6F6;
+}
+
+#cta_2:not(hover) #cta_2_arrow:after{
+  width: 16px;
+  transition-duration: 0.2s;
+}
+
+/* CTA 3 */
+#cta_3{
+  background-color: #191922;
+}
+#cta_3>button{
+  position: relative; 
+  border-radius: 4px;
+}
+
+#cta_3>button>p{
+  font-family: "Geo", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+#cta_3>button::before {
+  content: "";
+  background-image: url('./public/images/cta3.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.15;
+}
+
+#cta_3>button:hover::before{
+  opacity: 0.5;
+  transition-duration: 0.2s;
+}
+
+#cta_3>button:not(hover):before{
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+/* CTA 4 */
+#cta_4{
+  background-color: #01022C;
+}
+#cta_4>button{
+  background-color: #01022C;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0px 10px #00A3FF;
+  border-radius: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cta_4>button>p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  opacity: 0.7;
+}
+
+#cta_4>button:hover{
+  background-color: #01022C;
+  box-shadow: 0 0px 30px #00A3FF;
+  transition-duration: 0.2s;
+}
+
+#cta_4>button:hover p{
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+
+#cta_4>button:not(hover){
+  background-color: #01022C;
+  box-shadow: 0 0px 10px #00A3FF;
+  transition-duration: 0.2s;
+}
+
+#cta_4>button:not(hover) p{
+  opacity: 0.7;
+  transition-duration: 0.2s;
+}
+
+/* CTA 5 */
+#cta_5{
+  background-color: #F9D8C9;
+}
+
+#cta_5>button{
+  background-color: #D74100;
+  border-radius: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cta_5>button>p{
+  font-family: "Inter", sans-serif;
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#cta_5>button:hover{
+  background-color: #D72700;
+  transition-duration: 0.2s;
+}
+
+#cta_5>button:hover #cta_5_M{
+  top: -5px;
+  left: -4px;
+  transform: rotate(-15deg);
+  transition-duration: 0.2s;
+}
+
+#cta_5>button:hover #cta_5_A{
+  top: -8px;
+  left: -2px;
+  transform: rotate(-7deg);
+  transition-duration: 0.2s;
+}
+
+#cta_5>button:hover #cta_5_N{
+  top: -3px;
+  transform: rotate(5deg);
+  transition-duration: 0.2s;
+}
+
+#cta_5>button:hover #cta_5_G{
+  top: 3px;
+  left: 2px;
+  transform: rotate(-4deg);
+  transition-duration: 0.2s;
+}
+
+#cta_5>button:hover #cta_5_E{
+  top: -5px;
+  left: 4px;
+  transform: rotate(-5deg);
+  transition-duration: 0.2s;
+}
+
+#cta_5>button:hover #cta_5_R{
+  top: -6px;
+  left: 6px;
+  transform: rotate(-11deg);
+  transition-duration: 0.2s;
+}
+
+#cta_5>button:not(hover) p{
+  top: 0px;
+  left: 0px;
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+}
+
+/* CTA 6 */
+#cta_6{
+  background-color: #D2D2D2;
+  flex-direction: column;
+}
+
+.cta_6_disapear{
+  width: 200px;
+  background-color: #211D1D;
+  height: 19px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.cta_6_disapear_big{
+  width: 200px;
+  background-color: #D2D2D2;
+  height: 30px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+#cta_6>button{
+  background-color: #211D1D;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#cta_6_text1{
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}
+
+#cta_6_text2{
+  position: relative;
+  top: 40px;
+  opacity: 0;
+  z-index: 1;
+}
+
+#cta_6>button:hover #cta_6_text1{
+  transition-duration: 0.2s;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+#cta_6>button:hover #cta_6_text2{
+  transition-duration: 0.2s;
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+#cta_6>button:not(hover) #cta_6_text1{
+  transition-duration: 0.2s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#cta_6>button:not(hover) #cta_6_text2{
+  transition-duration: 0.2s;
+  transform: translateY(0px);
+  opacity: 0;
+}
