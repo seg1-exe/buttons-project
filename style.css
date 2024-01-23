@@ -103,7 +103,7 @@ button{
   transform:rotatez(-45deg);
 }
 
-#cta_2:hover #cta_2_arrow:after{
+#cta_2>button:hover #cta_2_arrow:after{
   width: 74px;
   transition-duration: 0.2s;
 }
@@ -343,4 +343,23 @@ button{
   transition-duration: 0.2s;
   transform: translateY(0px);
   opacity: 0;
+}
+
+/* CTA 7 */
+#cta_7{
+  background-color: #89AEFF;
+}
+
+#cta_7>button{
+  border-radius: 56px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 48px;
+  background: linear-gradient(149deg, #135FFF 0%, #0E44D0 72.88%);
+}
+
+#cta_7>button:hover{
+  transition-duration: 0.2s;
+  box-shadow: 8.653px 14.4px 33.6px 0px rgba(0, 71, 237, 0.50), 2.942px 4.896px 5.712px 0px #1463FF inset, -2.942px -4.896px 5.712px 0px #0D40C4 inset;
 }
